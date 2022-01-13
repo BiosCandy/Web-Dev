@@ -1,0 +1,34 @@
+#firstpara {
+  color: darkblue;
+}
+
+/* element selector  */
+p {
+  color: greenyellow;
+  background-color: hotpink;
+  border: 2px solid black;
+}
+
+/* id selector  */
+/* use  id selector when you want to apply some changeb or property only in particular or single element  */
+#redElement {
+  color: red;
+}
+
+/* class selector  */
+/* use clss selector when you want to apply the same changes to more than one element. for doing this simply assign the same class to all the elements or tag on which you want to apply the same change  */
+/* NOTE :- same class can be assigned to the diffrenent elements and multiple class can also be assigned to the same element but this is not in the case of "ID selector." */
+.bgblue {
+  background-color: blue;
+}
+
+/* grouping selectors  */
+footer,
+span {
+  background-color: darkorange;
+}
+#developertool {
+  color: deeppink;
+  font-style: italic;
+  background-color: yellow;
+}

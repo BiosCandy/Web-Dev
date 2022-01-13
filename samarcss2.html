@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS in HTML</title>
+    <!-- internal CSS has low preference than inline CSS  -->
+    <style>
+        p{
+          color: red;
+          background-color: yellow;
+        }
+    </style>
+
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="samar1.css">
+    <!-- the property which is written later, that property will gonna show in the given selector so in this case, here in our html page external css will precedence over the internal css as external css written after the internal css but in case if we want to show property of internal css then we will mark property of that selector as "!important"  -->
+</head>
+<body>
+    <!-- SYNTAX OF CSS  -->
+     <!-- p{ color: blue} -->
+     <!-- header, p.intro { background-color : red;
+        border-radius : 3px:
+      }  -->
+      <h3>CSS tutorials</h3>
+      <p>this tutorial will teach you everything about the css</p>
+      <!-- inline css is not good for practice that is we should not use inline css for styling  -->
+      <!-- inline css has more preference than internal css as well as external css  -->
+      <p style="color: tomato; background-color: aqua;">this tutorials will teach you everything about the CSS </p>
+
+
+      <!-- CSS selectors  -->
+      <!-- from herr all the css propertyb will be used in external CSS file  -->
+      <h3>CSS selectors</h3>
+      <p id="firstpara">this is simple paragraph to demeonstrate CSS selectors</p>
+      <p id="redElement" class="bgblue">this is another simple paragraph to demeonstrate CSS selectors</p>
+      <div>
+          <p>this is yet another simple paragraph to demeonstrate CSS selectors</p>
+          <span>This is span tag</span>
+      </div>
+      <footer>This is footer </footer>
+
+      <!-- DEVELOPER TOOLS CONCEPT  -->
+      <!-- for revision of chrome developer tools watch video no 16 of codewithharry because for this topic i can't write concepts here -->
+      <h3>Developer tools concept</h3>
+      <div class="bgblue">i am king</div>
+      <p id="developertool">This is a tutorial for chrome developer tools</p>
+</body>
+</html>
